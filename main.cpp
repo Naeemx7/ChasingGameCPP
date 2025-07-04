@@ -368,7 +368,7 @@ void drawFilledCircle(float cx, float cy, float radius, float r, float g, float 
 }
 void drawConnectingRect(float x1, float y1, float x2, float y2, float radius, float r, float g, float b) {
     glColor3f(r, g, b);
-    if (abs(x1 - x2) > abs(y1 - y2)) { glBegin(GL_QUADS); glVertex2f(x1, y1 - radius); glVertex2f(x2, y2 - radius); glVertex2f(x2, y2 + radius); glVertex2f(x1, y1 + radius); glEnd(); }
+    if (fabs(x1 - x2) > fabs(y1 - y2)) { glBegin(GL_QUADS); glVertex2f(x1, y1 - radius); glVertex2f(x2, y2 - radius); glVertex2f(x2, y2 + radius); glVertex2f(x1, y1 + radius); glEnd(); }
     else { glBegin(GL_QUADS); glVertex2f(x1 - radius, y1); glVertex2f(x2 - radius, y2); glVertex2f(x2 + radius, y2); glVertex2f(x1 + radius, y1); glEnd(); }
 }
 void drawFilledelipse(GLfloat x, GLfloat y, GLfloat radiusX, GLfloat radiusY) {
@@ -963,14 +963,14 @@ int main(int argc, char** argv) {
     glutSpecialFunc(specialKeyboard); // Register the handler for arrow keys
     glutIdleFunc(idle);
     lastTickTime = glutGet(GLUT_ELAPSED_TIME);
-
+/*
     // Check for and report MSAA (anti-aliasing) status
     GLint buffers; GLint samples;
     glGetIntegerv(GL_SAMPLE_BUFFERS, &buffers);
     glGetIntegerv(GL_SAMPLES, &samples);
     if (buffers > 0 && samples > 0) std::cout << "MSAA Enabled: Buffers=" << buffers << ", Samples=" << samples << std::endl;
     else std::cout << "MSAA Not Available/Enabled." << std::endl;
-
+*/
     // Print controls to the console for the user
     std::cout << "\n--- Controls ---\nWASD or Arrow Keys: Move\nP: Pause/Resume\nR: Reset Game\nESC: Quit\nEnter: Start Game\n----------------\n";
 
