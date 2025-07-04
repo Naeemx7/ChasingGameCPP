@@ -1,0 +1,11 @@
+# Code::Blocks project files
+*.cbp
+*.depend
+*.layout
+
+# Other files produced by Code::Blocks
+*.workspace
+
+# Build files
+bin/
+obj/
