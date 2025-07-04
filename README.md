@@ -10,7 +10,7 @@ This project is a 2D maze game developed as a final project for a 3rd-year Compu
 
 The player controls the Mouse, whose goal is to collect all the cheese in the maze. However, an intelligent Cat is constantly hunting the player using a Breadth-First Search (BFS) algorithm to find the shortest path. Can you clear all three levels before you're caught?
 
-![Gameplay Screenshot](Images/GameplayScreenshot.png)
+![Gameplay Screenshot](Images/gameplay.png)
 
 ### Key Features
 
@@ -28,8 +28,7 @@ The player controls the Mouse, whose goal is to collect all the cheese in the ma
 For a detailed breakdown of the project's design, implementation choices, and algorithms, please see the full documentation:
 
 **[-> View the ChasingGame Documentation PDF](ChasingGame%20Documentation.pdf)**
-
-*(Note: The link uses `%20` for the space in the filename, which is the correct format for URLs.)*
+![Game Icon](Images/Cheese.ico)
 
 ---
 
