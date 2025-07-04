@@ -27,7 +27,7 @@ The player controls the Mouse, whose goal is to collect all the cheese in the ma
 
 For a detailed breakdown of the project's design, implementation choices, and algorithms, please see the full documentation:
 
-**[-> View the ChasingGame Documentation PDF](ChasingGame%20Documentation.pdf)** <img src="Images/Cheese.ico" width="24" alt="Cheese Icon">
+**[-> View the ChasingGame Documentation PDF](ChasingGame%20Documentation.pdf)** <img src="Images/Cheese.ico" width="32" alt="Cheese Icon">
 
 ---
 
